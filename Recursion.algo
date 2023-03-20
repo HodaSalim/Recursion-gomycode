@@ -1,0 +1,19 @@
+
+FUNCTION isPalindrome(word)
+VAR
+    word: STRING
+BEGIN
+    IF (word[0] !== word[-1]) THEN
+        return "not a palindrome"
+    END_IF
+
+    IF (word == "" || word.length == 1) THEN
+        return "is a palindrome"
+    END_IF
+
+    IF (word[1] === word[-1]) THEN
+        word.slice[0];
+        word.slice[-1];
+        isPalindrome(word);
+    END_IF
+END
